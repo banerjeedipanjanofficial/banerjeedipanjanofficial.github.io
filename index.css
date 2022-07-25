@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+  }
+  
+  nav {
+    width: 100%;
+    height: 50px;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #8d8888;
+  }
+  
+  nav ul{
+    list-style-type: none;
+    display: flex;
+  }
+  
+  nav ul li a:hover{
+    color: white;
+    border-radius: 5px;
+  }
+  
+  nav ul li a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  nav ul li{
+    text-decoration: none;
+    padding: 0 100px;
+    font-size: 20px;
+  }
+  
+  header{
+    height: 600px;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+  }
+  
+  header .profileimg{
+    /* border: 2px solid black; */
+    height: 600px;
+    width: 40%;
+    background-color: #c4c3c3;
+  }
+  
+  header .profileimg img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    position: relative;
+    left: 150px;
+    top: 80px;
+  }
+  
+  header .profileimg h1{
+    position: relative;
+    top: 90px;
+    left: 140px;
+  }
+  
+  header .profileimg h3{
+    position: relative;
+    top: 100px;
+    left: 170px;
+  }
+  
+  header .profileimg h4{
+    position: relative;
+    top: 120px;
+    left: 180px;
+    color: rgb(72, 71, 71);
+  }
+  
+  header .profileimg a{
+    color: black;
+    text-decoration: none;
+  }
+  
+  header .profileinfo h1{
+    font-size: 40px;
+    position: relative;
+    top: 50px;
+    left: 50px;
+  }
+  
+  header .profileinfo ul{
+    position: relative;
+    top: 80px;
+    left: 120px;
+    width: 47%;
+    list-style-type:circle;
+  }
+  
+  header .profileinfo ul li{
+    margin-bottom: 18px;
+    font-weight: 550;
+    font-size: 18px;
+  }
+  
+  header .profileinfo{
+    /* border: 2px solid black; */
+    width: 60%;
+    height: 600px;
+    background-color: #eaeaea;
+  }
+  
+  .bottom{
+    /* border: 2px solid black; */
+    height: 95px;
+    background-color: #383737;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .bottom ul{
+    display: flex;
+  }
+
+  .bottom ul li{
+    padding: 0 50px;
+    list-style-type: none;
+  }
+
+  .bottom ul li i:hover{
+    border: 1px solid white;
+    width: fit-content;
+  }
+
+  .bottom i {
+    color: white;
+    font-size: 40px;
+  }
