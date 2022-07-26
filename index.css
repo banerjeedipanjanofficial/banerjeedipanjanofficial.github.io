@@ -1,42 +1,56 @@
 *{
     margin: 0;
     padding: 0;
-    overflow:hidden;
+    overflow-x:hidden;
   }
-  
+
+  body{
+    max-height: 100%;
+  }
+
   nav {
+    display: flex;
     width: 100%;
-    height: 50px;
-    /* border: 2px solid black; */
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    height: 10vh;
     background-color: #8d8888;
+    justify-content: center;
+    align-items: center;
   }
-  
   nav ul{
-    list-style-type: none;
     display: flex;
+    /* align-items: center;
+    justify-content: center; */
+
   }
-  
-  nav ul li a:hover{
+  nav ul li {
+    height: 30px;
+    /* display: inline-block; */
+    padding: 0 90px ;
+    list-style-type: none;
+   }
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+nav ul li:hover{
+  background-color: #818080;
+}
+nav ul li a:hover{
+  color: rgb(203, 252, 252);
+}
+
+  nav .fa-bars{
+    display: none;
+    position:absolute;
+    top: 25px;
+    right: 60px;
+    font-size: 35px;
     color: white;
-    border-radius: 5px;
-  }
-  
-  nav ul li a{
-    text-decoration: none;
-    color: black;
-  }
-  
-  nav ul li{
-    text-decoration: none;
-    padding: 0 100px;
-    font-size: 20px;
   }
   
   header{
-    height: 600px;
+    height: 80vh;
     width: 100%;
     /* border: 2px solid red; */
     display: flex;
@@ -44,36 +58,40 @@
   
   header .profileimg{
     /* border: 2px solid black; */
-    height: 600px;
     width: 40%;
+    height: 100%;
     background-color: #c4c3c3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   
   header .profileimg img {
     height: 250px;
     width: 250px;
     border-radius: 50%;
-    position: relative;
+    /* position: relative;
     left: 150px;
-    top: 80px;
+    top: 80px; */
   }
   
   header .profileimg h1{
-    position: relative;
-    top: 90px;
-    left: 140px;
+    position:relative;
+    top: 20px;
+    /* left: 140px; */
   }
   
   header .profileimg h3{
     position: relative;
-    top: 100px;
-    left: 170px;
+    top: 30px;
+    /* left: 170px; */
   }
   
   header .profileimg h4{
     position: relative;
-    top: 120px;
-    left: 180px;
+    top: 40px;
+    /* left: 180px; */
     color: rgb(72, 71, 71);
   }
   
@@ -82,6 +100,10 @@
     text-decoration: none;
   }
   
+  header .profileinfo {
+    height: 100%;
+  }
+
   header .profileinfo h1{
     font-size: 40px;
     position: relative;
@@ -106,13 +128,12 @@
   header .profileinfo{
     /* border: 2px solid black; */
     width: 60%;
-    height: 600px;
     background-color: #eaeaea;
   }
   
   .bottom{
     /* border: 2px solid black; */
-    height: 95px;
+    height: 10vh;
     background-color: #383737;
     display: flex;
     align-items: center;
@@ -137,3 +158,6 @@
     color: white;
     font-size: 40px;
   }
+
+
+  
